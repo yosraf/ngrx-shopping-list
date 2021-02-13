@@ -24,7 +24,9 @@ export class AppComponent implements OnInit {
   }
   addItem(){
     this.newShoppingItem.id = uuid()
-    this.store.dispatch(new AddItemAction(this.newShoppingItem));
+    if(this.newShoppingItem.name != ''){
+      this.store.dispatch(new AddItemAction(this.newShoppingItem));
+    }
     this.newShoppingItem = {id:'',name:''};
   }
   deleteItem(item:ShoppingItem){

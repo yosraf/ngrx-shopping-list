@@ -8,6 +8,8 @@ export function ShoppingReducer (state:Array<ShoppingItem> =initialState,action:
     switch(action.type){
         case ShoppingActionsType.ADD_ITEM:
             return [...state,action.payload];
+        case ShoppingActionsType.DELETE_ITEM:
+            return state.filter(item => item.id !== action.payload.id);
         default:
             return state;
     }

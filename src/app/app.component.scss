@@ -11,7 +11,7 @@
   }
   
   #shopping-list {
-    box-shadow: 20px 20px 0px #222f3e;
+    box-shadow: 20px 20px 0px #7d5fff45;
   }
   
   form {
@@ -29,18 +29,18 @@
   
   form > button {
     border: 0px;
-    background: #10ac84;
+    background: #5f27cd;
     color: white;
     outline: none;
   
     &:hover {
-      background: #006266;
+      background: #9c88ff;
     }
   }
   
   ul {
     list-style: none;
-    background: #1dd1a1;
+    background: #341f97;
     padding: 10px 0px;
     margin: 0px;
   }
@@ -50,7 +50,7 @@
   }
   
   h2 {
-    background: #10ac84;
+    background: #8c7ae6;
     padding: 10px 0px;
     margin: 0px;
   }
